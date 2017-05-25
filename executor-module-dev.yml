@@ -1,0 +1,14 @@
+e-arbiter:
+  swagger:
+    title: e-Arbiter - Executor Module
+    description: API for Executor Module
+
+spring:
+  profiles: dev
+
+server:
+  port: ${E_ARB_DEV_EXEC_PORT}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}

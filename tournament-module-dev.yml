@@ -1,0 +1,14 @@
+e-arbiter:
+  swagger:
+    title: e-Arbiter - Tournament Module
+    description: API for Tournament Module
+
+spring:
+  profiles: dev
+
+server:
+  port: ${E_ARB_DEV_TOUR_PORT}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}

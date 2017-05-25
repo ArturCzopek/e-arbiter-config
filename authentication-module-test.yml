@@ -1,0 +1,10 @@
+spring:
+  profiles: test, dev
+
+security:
+  basic:
+    enabled: false
+
+eureka:
+  client:
+    enabled: false
