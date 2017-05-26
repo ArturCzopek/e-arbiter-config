@@ -1,5 +1,6 @@
 e-arbiter:
   swagger:
+    enabled: true
     title: e-Arbiter - Executor Module
     description: API for Executor Module
 

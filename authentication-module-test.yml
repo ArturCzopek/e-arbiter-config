@@ -1,3 +1,6 @@
+e-arbiter:
+  swagger.enabled: true
+
 spring:
   profiles: test, dev
 

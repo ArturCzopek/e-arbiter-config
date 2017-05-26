@@ -1,5 +1,6 @@
 e-arbiter:
   swagger:
+    enabled: true
     title: e-Arbiter - Tournament Module
     description: API for Tournament Module
 

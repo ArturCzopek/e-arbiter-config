@@ -1,5 +1,6 @@
 e-arbiter:
   swagger:
+    enabled: true
     title: e-Arbiter - Solution Repository Module
     description: API for Solution Repository Module
 

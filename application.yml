@@ -1,3 +1,4 @@
 # Global file available for all modules
 e-arbiter:
   name: e-Arbiter
+  swagger.enabled: false
