@@ -13,3 +13,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+
+docker:
+  uri: unix:///var/run/docker.sock
+  img: test
+  cmd: python, run.py
+  binding: ${E_ARB_DEV_EXEC_BINDING}:/solution
