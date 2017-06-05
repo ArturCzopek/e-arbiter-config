@@ -16,6 +16,6 @@ eureka:
 
 docker:
   uri: unix:///var/run/docker.sock
-  img: test
+  img: maciejmarczak/compilebox:latest
   cmd: python, run.py
   binding: ${E_ARB_DEV_EXEC_BINDING}:/solution
