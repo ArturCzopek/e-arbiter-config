@@ -1,13 +1,2 @@
 e-arbiter:
   service-name: Tournament Module
-
-spring:
-  application:
-    name: tournament-module
-  profiles:
-    active: dev
-  data:
-    mongodb:
-      host: ${E_ARB_DEV_TOUR_MONGO_HOST}
-      port: ${E_ARB_DEV_TOUR_MONGO_PORT}
-      database: e-arbiter
