@@ -6,6 +6,11 @@ e-arbiter:
 
 spring:
   profiles: dev
+  data:
+    mongodb:
+      host: ${E_ARB_DEV_TOUR_MONGO_HOST}
+      port: ${E_ARB_DEV_TOUR_MONGO_PORT}
+      database: e-arbiter
 
 server:
   port: ${E_ARB_DEV_TOUR_PORT}
