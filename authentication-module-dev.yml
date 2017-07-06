@@ -7,6 +7,26 @@ e-arbiter:
 spring:
   profiles: dev
 
+  datasource:
+    name: e-arbiter-auth
+    platform: h2
+    url: jdbc:h2:mem:e-arbiter-auth;DATABASE_TO_UPPER=true;IGNORECASE=true;
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: H2
+    openInView: false
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true
+      path: /db-console
+
+liquibase:
+  enabled: true
+  change-log: classpath:/db/changelog/db.changelog-test.xml
+
 server:
   port: ${E_ARB_DEV_AUTH_PORT}
 eureka:

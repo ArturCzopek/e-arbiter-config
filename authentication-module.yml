@@ -1,2 +1,8 @@
 e-arbiter:
   service-name: Authentication Module
+
+spring:
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none

@@ -8,9 +8,9 @@ spring:
   profiles: dev
 
   datasource:
-    name: e-arbiter
+    name: e-arbiter-tour-res
     platform: h2
-    url: jdbc:h2:mem:e-arbiter;DATABASE_TO_UPPER=true;IGNORECASE=true;
+    url: jdbc:h2:mem:e-arbiter-tour-res;DATABASE_TO_UPPER=true;IGNORECASE=true;
 
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
