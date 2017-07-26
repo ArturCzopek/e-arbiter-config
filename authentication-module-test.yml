@@ -1,5 +1,6 @@
 e-arbiter:
   swagger:
+    enabled: true
     title: test
     description: test
     contact-name: test
