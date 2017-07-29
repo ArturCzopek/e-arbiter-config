@@ -24,3 +24,24 @@ If you change something there and you want to add this to master version, create
 
 #### Possibly problems
 Sometimes IJ cannot see your env variables. Remember about adding it to your env and to IJ!! Otherwise, IJ can throw some errors and you will be forced to use console (it isn't wrong but debugging is harder...)
+
+## ELK stack - configuration
+
+#### Download ELK
+Download and extract [elasticsearch], [kibana], [logstash].
+
+#### Setup ELK
+In file `env.txt` change the environments `E_ARB_{option}_RUN` where options is type of tool
+(ES - elasticsearch, KIB - kibana, LOG - logstash) to a directories u have just extract tools.
+You also have to change `E_ARB_LOG_{CFG}_PATH` to a directory where applications stands.
+
+#### Results
+The log charts can be seen via [results].
+I recommend to setup kibana with columns `Time, level, class, longmessage` for better visibility.
+You can add columns from left side panel with label available fields.
+The columns can be removed by clicking crossroad icon near column names under the main chart.
+
+[elasticsearch]: <https://www.elastic.co/downloads/elasticsearch>
+[kibana]: <https://www.elastic.co/downloads/kibana>
+[logstash]: <https://www.elastic.co/downloads/logstash>
+[results]: <http://localhost:5601>
