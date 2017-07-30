@@ -47,3 +47,6 @@ security:
       scope: repo, user
     resource:
       userInfoUri: https://api.github.com/user
+
+logging:
+  file: ${E_ARB_DEV_LOG_PATH}/e-arbiter-auth.log
