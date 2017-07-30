@@ -13,4 +13,4 @@ logging:
         springframework.web: INFO
         hibernate: INFO
       pl:
-        cyganki: INFO
+        cyganki: DEBUG
