@@ -19,3 +19,6 @@ docker:
   img: maciejmarczak/compilebox:latest
   cmd: python, run.py
   binding: ${E_ARB_DEV_EXEC_BINDING}:/solution
+
+logging:
+  file: ${E_ARB_DEV_LOG_PATH}/e-arbiter-executor.log

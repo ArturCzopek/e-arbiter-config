@@ -6,3 +6,12 @@ e-arbiter:
     path: rest-api
   clientUrl: ${E_ARB_HOST}:${E_ARB_DEV_CLIENT_PORT}
   proxyUrl: ${E_ARB_HOST}:${E_ARB_DEV_API_PORT}
+
+logging:
+    file: ${E_ARB_DEV_LOG_PATH}
+    level:
+      org:
+        springframework.web: INFO
+        hibernate: INFO
+      pl:
+        cyganki: DEBUG
