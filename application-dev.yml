@@ -4,5 +4,5 @@ e-arbiter:
     contact-address: artur@simplecoding.pl
     contact-url: http://simplecoding.pl
     path: rest-api
-  clientUrl: ${E_ARB_DEV_HOST}:${E_ARB_DEV_CLIENT_PORT}
-  proxyUrl: ${E_ARB_DEV_HOST}:${E_ARB_DEV_API_PORT}
+  clientUrl: ${E_ARB_HOST}:${E_ARB_DEV_CLIENT_PORT}
+  proxyUrl: ${E_ARB_HOST}:${E_ARB_DEV_API_PORT}
