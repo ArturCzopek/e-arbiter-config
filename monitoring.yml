@@ -3,4 +3,4 @@ e-arbiter:
 
 turbine:
   clusterNameExpression: new String("default")  # don't ask why. Thanks to it I can aggregate hystrix streams from other modules
-  appConfig: authentication-module, executor-module, tournament-module, tournament-results-module # modules from Eureka which will be aggregated
+  appConfig: api-gateway, authentication-module, executor-module, tournament-module, tournament-results-module # modules from Eureka which will be aggregated
