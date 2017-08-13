@@ -1,2 +1,3 @@
 e-arbiter:
   service-name: Tournament Module
+  salt: ${E_ARB_DEV_TOUR_MONGO_SALT}
