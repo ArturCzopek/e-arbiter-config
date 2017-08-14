@@ -11,6 +11,8 @@ spring:
       host: ${E_ARB_DEV_TOUR_MONGO_HOST}
       port: ${E_ARB_DEV_TOUR_MONGO_PORT}
       database: e-arbiter
+      username: ${E_ARB_DEV_TOUR_MONGO_USERNAME}
+      password: ${E_ARB_DEV_TOUR_MONGO_PASSWORD}
 
 server:
   port: ${E_ARB_DEV_TOUR_PORT}
