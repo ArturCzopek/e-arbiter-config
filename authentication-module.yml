@@ -6,3 +6,13 @@ spring:
     generate-ddl: false
     hibernate:
       ddl-auto: none
+
+security:
+  oauth2:
+    client:
+      accessTokenUri: https://github.com/login/oauth/access_token
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+      clientAuthenticationScheme: form
+      scope: user
+    resource:
+      userInfoUri: https://api.github.com/user
