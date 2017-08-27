@@ -1,23 +1,2 @@
-server:
-  port: ${E_ARB_DEV_API_PORT}
-
-zuul:
-  routes:
-    authentication-module:
-      path: ${E_ARB_DEV_AUTH_PATH}/**
-      url: ${E_ARB_HOST}:${E_ARB_DEV_AUTH_PORT}
-
-    executor-module:
-      path: ${E_ARB_DEV_EXEC_PATH}/**
-      url: ${E_ARB_HOST}:${E_ARB_DEV_EXEC_PORT}
-
-    tournament-module:
-      path: ${E_ARB_DEV_TOUR_PATH}/**
-      url: ${E_ARB_HOST}:${E_ARB_DEV_TOUR_PORT}
-
-    tournament-results-module:
-      path: ${E_ARB_DEV_TRES_PATH}/**
-      url: ${E_ARB_HOST}:${E_ARB_DEV_TRES_PORT}
-
 logging:
   file: ${E_ARB_DEV_LOG_PATH}/e-arbiter-api-gateway.log

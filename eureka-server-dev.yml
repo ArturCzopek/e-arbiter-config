@@ -1,5 +1,3 @@
-server:
-  port: ${E_ARB_DEV_EUR_PORT}
 eureka:
   instance:
     hostname: localhost

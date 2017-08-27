@@ -1,6 +1,9 @@
 e-arbiter:
   service-name: Tournament Results Module
 
+server:
+  port: ${E_ARB_TRES_PORT}
+
 spring:
   jpa:
     generate-ddl: false

@@ -1,2 +1,23 @@
 e-arbiter:
   service-name: API Gateway
+
+server:
+  port: ${E_ARB_API_PORT}
+
+zuul:
+  routes:
+    authentication-module:
+      path: ${E_ARB_AUTH_PATH}/**
+      url: ${E_ARB_HOST}:${E_ARB_AUTH_PORT}
+
+    executor-module:
+      path: ${E_ARB_EXEC_PATH}/**
+      url: ${E_ARB_HOST}:${E_ARB_EXEC_PORT}
+
+    tournament-module:
+      path: ${E_ARB_TOUR_PATH}/**
+      url: ${E_ARB_HOST}:${E_ARB_TOUR_PORT}
+
+    tournament-results-module:
+      path: ${E_ARB_TRES_PATH}/**
+      url: ${E_ARB_HOST}:${E_ARB_TRES_PORT}

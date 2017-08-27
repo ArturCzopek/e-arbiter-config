@@ -3,6 +3,7 @@ e-arbiter:
     enabled: true
     title: e-Arbiter - Tournament Module
     description: API for Tournament Module
+  salt: ${E_ARB_DEV_TOUR_MONGO_SALT}
 
 spring:
   profiles: dev
@@ -14,8 +15,6 @@ spring:
       username: ${E_ARB_DEV_TOUR_MONGO_USERNAME}
       password: ${E_ARB_DEV_TOUR_MONGO_PASSWORD}
 
-server:
-  port: ${E_ARB_DEV_TOUR_PORT}
 eureka:
   client:
     serviceUrl:

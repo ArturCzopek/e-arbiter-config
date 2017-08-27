@@ -7,6 +7,9 @@ spring:
     hibernate:
       ddl-auto: none
 
+server:
+  port: ${E_ARB_AUTH_PORT}
+
 security:
   oauth2:
     client:

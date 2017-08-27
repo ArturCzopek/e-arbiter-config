@@ -27,8 +27,6 @@ liquibase:
   enabled: true
   change-log: classpath:/db/changelog/db.changelog-test.xml
 
-server:
-  port: ${E_ARB_DEV_TRES_PORT}
 eureka:
   client:
     serviceUrl:

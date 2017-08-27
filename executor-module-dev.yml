@@ -7,8 +7,6 @@ e-arbiter:
 spring:
   profiles: dev
 
-server:
-  port: ${E_ARB_DEV_EXEC_PORT}
 eureka:
   client:
     serviceUrl:

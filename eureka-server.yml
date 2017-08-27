@@ -1,2 +1,5 @@
 e-arbiter:
   service-name: Eureka Server
+
+server:
+  port: ${E_ARB_EUR_PORT}

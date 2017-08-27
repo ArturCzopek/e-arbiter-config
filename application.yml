@@ -2,3 +2,13 @@
 e-arbiter:
   name: e-Arbiter
   swagger.enabled: false
+  clientUrl: ${E_ARB_HOST}:${E_ARB_CLIENT_PORT}
+  proxyUrl: ${E_ARB_HOST}:${E_ARB_API_PORT}
+
+logging:
+  level:
+    org:
+      springframework.web: INFO
+      hibernate: INFO
+    pl:
+      cyganki: INFO

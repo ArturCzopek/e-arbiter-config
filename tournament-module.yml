@@ -18,3 +18,6 @@ spring:
             connectiontimeout: ${E_ARB_TOUR_MAIL_TIMEOUTS}
             timeout: ${E_ARB_TOUR_MAIL_TIMEOUTS}
             writetimeout: ${E_ARB_TOUR_MAIL_TIMEOUTS}
+
+server:
+  port: ${E_ARB_TOUR_PORT}

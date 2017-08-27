@@ -1,2 +1,5 @@
 e-arbiter:
   service-name: Executor Module
+
+server:
+  port: ${E_ARB_EXEC_PORT}
