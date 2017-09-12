@@ -7,5 +7,6 @@ e-arbiter:
 
 logging:
     file: ${E_ARB_DEV_LOG_PATH}
+    level:
       pl:
         cyganki: DEBUG
