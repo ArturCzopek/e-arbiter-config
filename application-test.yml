@@ -1,0 +1,2 @@
+e-arbiter:
+  monitoringUrl: ${E_ARB_HOST}:${E_ARB_DEV_HYS_PORT}

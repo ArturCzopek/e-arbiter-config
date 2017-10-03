@@ -1,0 +1,16 @@
+spring:
+  profiles: dev
+
+server:
+  port: ${E_ARB_DEV_HYS_PORT}
+management:
+  port: ${E_ARB_DEV_HYS_MAN_PORT}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+
+logging:
+  file: ${E_ARB_DEV_LOG_PATH}/e-arbiter-monitoring.log
