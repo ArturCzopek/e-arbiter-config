@@ -9,6 +9,7 @@ e-arbiter:
     path: rest-api
   clientUrl: test
   proxyUrl: test
+  salt: ${E_ARB_TOUR_MONGO_SALT}
 
 spring:
   profiles: test

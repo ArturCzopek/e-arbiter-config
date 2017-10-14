@@ -1,5 +1,3 @@
-server:
-  port: ${E_ARB_DEV_EUR_PORT}
 eureka:
   instance:
     hostname: localhost
@@ -8,6 +6,3 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
-logging:
-  file: ${E_ARB_DEV_LOG_PATH}/e-arbiter-eureka.log

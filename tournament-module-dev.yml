@@ -6,20 +6,8 @@ e-arbiter:
 
 spring:
   profiles: dev
-  data:
-    mongodb:
-      host: ${E_ARB_DEV_TOUR_MONGO_HOST}
-      port: ${E_ARB_DEV_TOUR_MONGO_PORT}
-      database: e-arbiter
-      username: ${E_ARB_DEV_TOUR_MONGO_USERNAME}
-      password: ${E_ARB_DEV_TOUR_MONGO_PASSWORD}
 
-server:
-  port: ${E_ARB_DEV_TOUR_PORT}
 eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-
-logging:
-  file: ${E_ARB_DEV_LOG_PATH}/e-arbiter-tournament.log

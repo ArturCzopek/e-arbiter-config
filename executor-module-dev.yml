@@ -7,18 +7,7 @@ e-arbiter:
 spring:
   profiles: dev
 
-server:
-  port: ${E_ARB_DEV_EXEC_PORT}
 eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-
-docker:
-  uri: unix:///var/run/docker.sock
-  img: maciejmarczak/compilebox:latest
-  cmd: python, run.py
-  binding: ${E_ARB_DEV_EXEC_BINDING}:/solution
-
-logging:
-  file: ${E_ARB_DEV_LOG_PATH}/e-arbiter-executor.log

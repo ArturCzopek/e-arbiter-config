@@ -1,6 +1,9 @@
 e-arbiter:
   service-name: Authentication Module
 
+server:
+  port: ${E_ARB_AUTH_PORT}
+
 spring:
   jpa:
     generate-ddl: false

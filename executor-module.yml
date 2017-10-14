@@ -1,2 +1,14 @@
 e-arbiter:
   service-name: Executor Module
+
+server:
+  port: ${E_ARB_EXEC_PORT}
+
+docker:
+  uri: unix:///var/run/docker.sock
+  img: earbiterinfo/e-arbiter-compile-box:latest
+  cmd: python, run.py
+  binding: ${E_ARB_EXEC_BINDING}:/solution
+
+logging:
+  file: ${E_ARB_SUB_LOG_PATH}/e-arbiter-executor.log

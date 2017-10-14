@@ -22,7 +22,4 @@ eureka:
     enabled: false
 
 docker:
-  uri: unix:///var/run/docker.sock
-  img: test
-  cmd: python, run.py
   binding: ~:/solution

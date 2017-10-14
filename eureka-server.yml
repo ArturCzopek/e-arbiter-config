@@ -1,2 +1,8 @@
 e-arbiter:
   service-name: Eureka Server
+
+server:
+  port: ${E_ARB_EUR_PORT}
+
+logging:
+  file: ${E_ARB_SUB_LOG_PATH}/e-arbiter-eureka.log

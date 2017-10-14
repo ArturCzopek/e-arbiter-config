@@ -27,8 +27,6 @@ liquibase:
   enabled: true
   change-log: classpath:/db/changelog/db.changelog-test.xml
 
-server:
-  port: ${E_ARB_DEV_AUTH_PORT}
 eureka:
   client:
     serviceUrl:
@@ -43,4 +41,4 @@ security:
       clientSecret: ${E_ARB_DEV_GH_CLIENT_SECRET}
 
 logging:
-  file: ${E_ARB_DEV_LOG_PATH}/e-arbiter-auth.log
+  file: ${E_ARB_SUB_LOG_PATH}/e-arbiter-auth.log

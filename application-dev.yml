@@ -4,15 +4,12 @@ e-arbiter:
     contact-address: artur@simplecoding.pl
     contact-url: http://simplecoding.pl
     path: rest-api
-  clientUrl: ${E_ARB_HOST}:${E_ARB_DEV_CLIENT_PORT}
-  proxyUrl: ${E_ARB_HOST}:${E_ARB_DEV_API_PORT}
-  monitoringUrl: ${E_ARB_HOST}:${E_ARB_DEV_HYS_PORT}
+  clientUrl: ${E_ARB_HOST}:${E_ARB_CLIENT_PORT}
+  proxyUrl: ${E_ARB_HOST}:${E_ARB_API_PORT}
+  monitoringUrl: ${E_ARB_HOST}:${E_ARB_HYS_PORT}
 
 logging:
-    file: ${E_ARB_DEV_LOG_PATH}
-    level:
-      org:
-        springframework.web: INFO
-        hibernate: INFO
-      pl:
-        cyganki: DEBUG
+  file: ${E_ARB_SUB_LOG_PATH}
+  level:
+    pl:
+      cyganki: DEBUG

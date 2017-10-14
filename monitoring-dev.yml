@@ -2,9 +2,9 @@ spring:
   profiles: dev
 
 server:
-  port: ${E_ARB_DEV_HYS_PORT}
+  port: ${E_ARB_HYS_PORT}
 management:
-  port: ${E_ARB_DEV_HYS_MAN_PORT}
+  port: ${E_ARB_HYS_MAN_PORT}
 eureka:
   client:
     serviceUrl:
@@ -13,4 +13,4 @@ eureka:
     preferIpAddress: true
 
 logging:
-  file: ${E_ARB_DEV_LOG_PATH}/e-arbiter-monitoring.log
+  file: ${E_ARB_SUB_LOG_PATH}/e-arbiter-tournament-results.log
