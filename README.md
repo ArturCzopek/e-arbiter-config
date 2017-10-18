@@ -14,8 +14,11 @@ Currently, application cannot run without this repo. Prod version probably will 
 For development user can sometimes change something locally.
 
 Instruction:
+
 -Download this repository.
+
 -From file `env.env` copy enviroments and add to your environment. (If you have problem on Windows, write message to Artur)
+
 -Change `E_ARB_ROOT_FOLDER` env variable value. It should point to your main folder with three projects: e-arbiter, e-arbiter-utils, e-arbiter-config.
 
 If you change something, COMMIT IT, BUT WITHOUT PUSH! Otherwise, yours changes won't be visible for Spring.
