@@ -15,15 +15,15 @@ For development user can sometimes change something locally.
 
 Instruction:
 -Download this repository.
--From file `env.txt` copy enviroments and add to your environment. (If you have problem on Windows, write message to Artur)
--Change E_ARB_DEV_CFG_PATH env variable value. It has to point to your local version of this repo.
+-From file `env.env` copy enviroments and add to your environment. (If you have problem on Windows, write message to Artur)
+-Change `E_ARB_ROOT_FOLDER` env variable value. It should point to your main folder with three projects: e-arbiter, e-arbiter-utils, e-arbiter-config.
 
 If you change something, COMMIT IT, BUT WITHOUT PUSH! Otherwise, yours changes won't be visible for Spring.
 
 If you change something there and you want to add this to master version, create another branch, new pull request, and attach it to proper Trello's ticket. Sometimes changes will be needed!
 
 #### Possibly problems
-Sometimes IJ cannot see your env variables. Remember about adding it to your env and to IJ!! Otherwise, IJ can throw some errors and you will be forced to use console (it isn't wrong but debugging is harder...)
+Sometimes IJ cannot see your env variables. Remember about adding it to your env and to IJ!! Otherwise, IJ can throw some errors and you will be forced to use console (it isn't wrong but debugging is harder...). Suggested plugin: `envFile`
 
 ## ELK stack - configuration
 
@@ -31,9 +31,8 @@ Sometimes IJ cannot see your env variables. Remember about adding it to your env
 Download and extract [elasticsearch], [kibana], [logstash].
 
 #### Setup ELK
-In file `env.txt` change the environments `E_ARB_{option}_RUN` where options is type of tool
+In file `env.env` change the environments `E_ARB_{option}_RUN` where options is type of tool
 (ES - elasticsearch, KIB - kibana, LOG - logstash) to a directories u have just extract tools.
-You also have to change `E_ARB_LOG_{CFG}_PATH` to a directory where applications stands.
 
 #### Results
 The log charts can be seen via [results].
