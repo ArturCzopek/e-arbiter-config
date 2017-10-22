@@ -8,6 +8,9 @@ e-arbiter:
 ribbon:
   ConnectTimeout: 6000
   ReadTimeout: 60000
+  
+hystrix:
+  command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 
 logging:
   level:
