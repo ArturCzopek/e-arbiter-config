@@ -23,6 +23,14 @@ zuul:
       path: ${E_ARB_EXEC_PATH}/**
       url: ${E_ARB_HOST}:${E_ARB_EXEC_PORT}
 
+    eureka-server:
+      path: ${E_ARB_EUR_PATH}/**
+      url: ${E_ARB_HOST}:${E_ARB_EUR_PORT}
+
+    monitoring:
+      path: ${E_ARB_HYS_PATH}/**
+      url: ${E_ARB_HOST}:${E_ARB_HYS_PORT}
+
     tournament-module:
       path: ${E_ARB_TOUR_PATH}/**
       url: ${E_ARB_HOST}:${E_ARB_TOUR_PORT}
