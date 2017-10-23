@@ -12,6 +12,14 @@ ribbon:
 hystrix:
   command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 
+endpoints:
+  default.enabled: false
+  env.enabled: true
+  health.enabled: true
+  logfile.enabled: true
+  metrics.enabled: true
+
+
 logging:
   level:
     org:
