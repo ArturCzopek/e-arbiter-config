@@ -19,3 +19,6 @@ security:
       scope: user, user:email
     resource:
       userInfoUri: https://api.github.com/user
+
+logging:
+  file: ${E_ARB_SUB_LOG_PATH}/e-arbiter-auth.log

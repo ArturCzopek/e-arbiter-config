@@ -9,3 +9,6 @@ spring:
     generate-ddl: false
     hibernate:
       ddl-auto: none
+
+logging:
+  file: ${E_ARB_SUB_LOG_PATH}/e-arbiter-tournament-results.log

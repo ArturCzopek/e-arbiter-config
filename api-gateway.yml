@@ -4,8 +4,6 @@ e-arbiter:
 server:
   port: ${E_ARB_API_PORT}
 
-logging:
-  file: ${E_ARB_SUB_LOG_PATH}/e-arbiter-api-gateway.log
 eureka:
   client:
     serviceUrl:
@@ -42,3 +40,6 @@ zuul:
     tournament-results-module:
       path: ${E_ARB_TRES_PATH}/**
       url: ${E_ARB_HOST}:${E_ARB_TRES_PORT}
+
+logging:
+  file: ${E_ARB_SUB_LOG_PATH}/e-arbiter-api-gateway.log

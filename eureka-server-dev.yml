@@ -6,3 +6,6 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+logging:
+  file: ${E_ARB_SUB_LOG_PATH}/e-arbiter-eureka.log

@@ -9,7 +9,6 @@ e-arbiter:
   monitoringUrl: ${E_ARB_HOST}:${E_ARB_HYS_PORT}
 
 logging:
-  file: ${E_ARB_SUB_LOG_PATH}
   level:
     pl:
       cyganki: DEBUG
