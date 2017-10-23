@@ -14,11 +14,10 @@ hystrix:
 
 endpoints:
   default.enabled: false
-  env.enabled: true
   health.enabled: true
   logfile.enabled: true
-  metrics.enabled: true
 
+management.security.enabled: false
 
 logging:
   level:
