@@ -16,15 +16,13 @@ endpoints:
   default.enabled: false
   health.enabled: true
   logfile.enabled: true
+  cors:
+    allowed-origins: ${e-arbiter.clientUrl}, ${e-arbiter.proxyUrl} 
+    allowed-methods: "*"
+    allowed-headers: "*"
 
 
-management:
-  security.enabled: false
-  endpoints:
-    cors:
-      allowed-origins: ${e-arbiter.clientUrl}, ${e-arbiter.proxyUrl} 
-      allowed-methods: "*"
-      allowed-headers: "*"
+management.security.enabled: false
 
 logging:
   level:
