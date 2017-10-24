@@ -16,6 +16,9 @@ endpoints:
   default.enabled: false
   health.enabled: true
   logfile.enabled: true
+  cors:
+    allowed-origins: ${e-arbiter.clientUrl}, ${e-arbiter.proxyUrl} 
+    allowed-methods=GET, OPTIONS
 
 management.security.enabled: false
 
