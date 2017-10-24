@@ -23,8 +23,8 @@ management:
   endpoints:
     cors:
       allowed-origins: ${e-arbiter.clientUrl}, ${e-arbiter.proxyUrl} 
-      allowed-methods: *
-      allowed-headers: *
+      allowed-methods: "*"
+      allowed-headers: "*"
 
 logging:
   level:
